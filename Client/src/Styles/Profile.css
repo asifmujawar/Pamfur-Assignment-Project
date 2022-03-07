@@ -1,0 +1,113 @@
+.calendar-container{
+    background-image: url('./gradient.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.calendar-container .row{
+    width: 80%;
+    height: 500px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.calendar-container .row .event-detail{
+    margin: auto;
+    background-color: rgb(46, 112, 235);
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.calendar-container .row .event-detail p{
+    margin: 0 !important;
+}
+
+.calendar-container .row .event-detail .event-heading{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.calendar-container .row .event-detail {
+    text-align: center;
+}
+.calendar-container .row .calendar-left{
+    justify-content: center;
+    align-items: center;
+}
+.calendar-container .row .calendar-right{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.calendar-container .row .event-div{
+    height: 360px;
+    padding-bottom: 30px;
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.calendar-container .calendar-row .calendar-right button{
+    margin-top: 10px;
+    background-color: orange;
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.calendar-container .row .calendar-left{
+    background-color: rgb(46, 112, 235);
+}
+
+.calendar-container .row .calendar-left button{
+    background-color: white;
+    color: #0c232c;
+}
+
+.setEvent-div input{
+    width: 100%;
+    margin-bottom: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(230, 228, 228);
+    padding: 10px;
+}
+
+@media only screen and (max-width:960px){
+    .calendar-container{
+        height: auto;
+    }
+    .calendar-container .row{
+        width: 100%;
+        height: auto;
+    }
+
+    .calendar-container .row .calendar-left{
+        height: 44%;
+    }
+    .calendar-container .row .calendar-right{
+        margin-top: 20px;
+        height: 56%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .calendar-container .row .event-detail{
+        width: 90%;
+    }
+}
